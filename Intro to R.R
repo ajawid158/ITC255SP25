@@ -30,7 +30,7 @@ dt1[2,3]   #second row third column
 #Sequencing
 #Selection
 #Loop
-x=4
+x=0
 
 
 if(x>0){
