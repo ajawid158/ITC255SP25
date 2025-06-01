@@ -9,6 +9,7 @@ library(ggplot2)
 dtTips=read.csv("tips.csv")
 
 jtable=table(dtTips$sex, dtTips$smoker)
+jtable
 jtable=as.data.frame(jtable)
 jtable
 
@@ -113,7 +114,7 @@ boxplot(tip~sex,
 stripchart(tip~sex,
            data = dtTips,
            method = 'jitter', 
-           pch=19, 
+           pch=1, 
            col=2:4,
            add = TRUE)
 ggsave('jointboxplotwithpoints.pdf')
@@ -137,7 +138,7 @@ g0+geom_point()
 
 #modifications inside geom_point
 g0=ggplot(dtTips, aes(x=total_bill, y=tip))
-g0+geom_point(color=10, shape=5, size=2)
+g0+geom_point(color=1, shape=1, size=2)
 
 names(dtTips)
 #Modifications in aes
